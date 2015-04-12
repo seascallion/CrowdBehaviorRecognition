@@ -1,7 +1,7 @@
 from cv2 import *
 from matplotlib.pyplot import *
 
-filename = 'crowd4.jpg'
+filename = '003.jpg'
 
 directory = '../data/images'
 
