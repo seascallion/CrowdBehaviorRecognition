@@ -1,12 +1,12 @@
 from cv2 import *
 from matplotlib.pyplot import *
+from skin import detect_skin
 
-filename = '003.jpg'
+filename = '002.jpg'
 
 directory = '../data/images'
 
 im = imread(directory + '/' + filename)
-im = cvtColor(im, COLOR_RGB2GRAY)
 
 subplot(221), imshow(im, cmap='gray')
 title('Original Image'), xticks([]), yticks([])
@@ -24,6 +24,11 @@ title('Sobel X'), xticks([]), yticks([])
 
 subplot(224), imshow(sobel_y, cmap='gray')
 title('Sobel Y'), xticks([]), yticks([])
+
+skin = detect_skin(im)
+
+subplot(222), imshow(skin, cmap='gray')
+title('Skin'), xticks([]), yticks([])
 
 vert_amount = sobel_x.mean()
 horz_amount = sobel_y.mean()
