@@ -8,7 +8,7 @@ lower = np.array([0, 48, 60], dtype = "uint8")
 upper = np.array([20, 255, 255], dtype = "uint8")
 
 # grab the image
-imagePath = 'C:\GithubRepos\CrowdBehaviorRecognition\data\images\crowd14.jpg'
+imagePath = '../data/images/006.jpg'
 oImage = cv2.imread(imagePath)
 image = cv2.resize(oImage, (0,0), fx=2, fy=2)
 
