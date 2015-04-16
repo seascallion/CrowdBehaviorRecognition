@@ -14,7 +14,7 @@ image = cv2.resize(oImage, (0,0), fx=2, fy=2)
 
 # resize the frame, convert it to the HSV color space,
 # and determine the HSV pixel intensities that fall into
-# the speicifed upper and lower boundaries
+# the specified upper and lower boundaries
 converted = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 skinMask = cv2.inRange(converted, lower, upper)
 
