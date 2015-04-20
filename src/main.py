@@ -4,7 +4,7 @@ from skin import detect_skin
 import numpy as np
 from os import listdir
 
-display_filename = '043.jpg'
+display_filenames = ['043.jpg']
 
 directory = '../data/images'
 
@@ -34,7 +34,7 @@ for filename in listdir(directory):
     print 'Density: %.4f' % density
     print ''
 
-    if filename == display_filename:
+    if filename in display_filenames:
         subplot(221), imshow(im, cmap='gray')
         title('Original Image'), xticks([]), yticks([])
 
