@@ -1,6 +1,7 @@
-from cv2 import *
-from matplotlib.pyplot import *
+from cv2 import imread, Sobel, CV_64F
+from matplotlib.pyplot import title, xticks, yticks, subplot, imshow, show
 from skin import detect_skin
+import numpy as np
 
 filename = '002.jpg'
 
@@ -35,7 +36,10 @@ horz_amount = sobel_y.mean()
 
 cheeringness = np.log(vert_amount / horz_amount)
 
+density = skin.mean() / skin.max()
+
 print 'File:', filename
 print 'Cheeringness:', cheeringness
+print 'Density:', density
 
 show()
