@@ -8,9 +8,7 @@ def detect_skin(oImage):
     lower = np.array([0, 48, 60], dtype='uint8')
     upper = np.array([20, 255, 255], dtype='uint8')
 
-    # grab the image
-    #imagePath = '../data/images/006.jpg'
-    #oImage = cv2.imread(imagePath)
+    # resize the image
     image = cv2.resize(oImage, (0,0), fx=2, fy=2)
 
     # resize the frame, convert it to the HSV color space,
@@ -25,9 +23,10 @@ def detect_skin(oImage):
     skinMask = cv2.erode(skinMask, kernel, iterations=2)
     skinMask = cv2.dilate(skinMask, kernel, iterations=2)
 
-    # blur the mask to help remove noise, then apply the
-    # mask to the frame
+    # blur the mask to help remove noise
     skinMask = cv2.GaussianBlur(skinMask, (3, 3), 0)
+
+    # apply the mask to the frame
     #skin = cv2.bitwise_and(image, image, mask=skinMask)
 
     # show the skin in the image along with the mask
