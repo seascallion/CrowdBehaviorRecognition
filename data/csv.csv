@@ -7,9 +7,9 @@ file,density,action,emotion
 005,high,cheering,neutral
 006,high,cheering,excited
 007,high,cheering,neutral
-008,medium,??,neutral
+008,medium,cheering,neutral
 009,high,cheering,excited
-010,medium,??,neutral
+010,medium,cheering,neutral
 011,high,idle,neutral
 012,medium,cheering,excited
 013,medium,idle,bored

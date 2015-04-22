@@ -9,7 +9,7 @@ from os import listdir
 display_filenames = []
 test_results = dict()
 
-cheer_threshold = 0.1
+cheer_threshold = 0.05
 density_low_threshold = 0.1
 density_high_threshold = 0.18
 
@@ -24,6 +24,11 @@ density_dict = {
     'low': [0, 0],
     'medium': [0, 0],
     'high': [0, 0]
+}
+
+cheering_dict = {
+    'idle': [0, 0],
+    'cheering': [0, 0]
 }
 
 for filename in listdir(directory):
@@ -57,6 +62,12 @@ for filename in listdir(directory):
         density_dict[true_density][0] += 1
     else:
         density_dict[true_density][1] += 1
+
+    true_cheer = test_results[shortFilename]['action']
+    if cheering_s == true_cheer:
+        cheering_dict[true_cheer][0] += 1
+    else:
+        cheering_dict[true_cheer][1] += 1
 
     
     print 'File:', filename
@@ -94,3 +105,17 @@ low_percent = (1.0*low_correct)/(1.0*low_total) * 100.0
 print 'High Density:', high_correct,'of',high_total,'(%.2f%%' % high_percent,')'
 print 'Medium Density ', medium_correct,'of',medium_total,'(%.2f%%' % medium_percent,')'
 print 'Low Density:', low_correct,'of',low_total,'(%.2f%%' % low_percent,')'
+
+
+idle_total = sum(cheering_dict['idle'])
+cheering_total = sum(cheering_dict['cheering'])
+
+idle_correct = cheering_dict['idle'][0]
+cheering_correct = cheering_dict['cheering'][0]
+
+idle_percent = (1.0*idle_correct)/(1.0*idle_total) * 100.0
+cheering_percent = (1.0*cheering_correct)/(1.0*cheering_total) * 100.0
+
+print ' '
+print 'Idle Activity', idle_correct,'of',idle_total,'(%.2f%%' % idle_percent,')'
+print 'Cheering Activity', cheering_correct,'of',cheering_total,'(%.2f%%' % cheering_percent,')'
