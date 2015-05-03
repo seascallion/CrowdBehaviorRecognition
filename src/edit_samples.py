@@ -1,8 +1,12 @@
+#! /usr/bin/env python
 # import the necessary packages
 import argparse
 import cv2
 import os
 import ntpath
+
+# use Unix-style separators (works on both Unix and Windows)
+os.sep = '/'
 
 # initialize the list of reference points
 refPt = []
@@ -84,16 +88,16 @@ def click_and_crop(event, x, y, flags, param):
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument('-i', '--images', required=True, help='Path to the images folder')
+ap.add_argument('-i', '--images', default='data/images', help='Path to the images folder')
 args = vars(ap.parse_args())
 
-images_path = args['images']
-positive_path = os.path.join(images_path, 'positive.dat')
-negative_path = os.path.join(images_path, 'negative.dat')
-bg_path = os.path.join(images_path, 'bg.dat')
+images_path = args['images'].replace('\\', os.sep)
+positive_path = os.sep.join([images_path, 'positive.dat'])
+negative_path = os.sep.join([images_path, 'negative.dat'])
+bg_path = os.sep.join([images_path, 'bg.dat'])
 
 image_paths = [
-    os.path.join(images_path, filename)
+    os.sep.join([images_path, filename])
     for filename in os.listdir(images_path)
     if any(filename.endswith('.{0}'.format(ext)) for ext in ['jpg', 'jpeg', 'png'])
 ]
@@ -199,7 +203,7 @@ with open(bg_path, 'w+') as output_file:
             cropped_filepath = os.path.join(negative_samples_path, cropped_filename)
             cv2.imwrite(cropped_filepath, cropped_image)
             index += 1
-            rel_cropped_filename = os.path.relpath(cropped_filepath, images_path)
+            rel_cropped_filename = os.path.relpath(cropped_filepath, images_path).replace('\\', '/')
             output_file.write('%s\n' % rel_cropped_filename)
 
 # close all open windows
