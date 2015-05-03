@@ -2,66 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2c93d64-17a4-4449-ac4b-e012cd61c6be" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Admin\dev\CrowdBehaviorRecognition\data\images\samples.dat" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0008.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0008.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0009.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0009.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0023.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0023.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0024.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0024.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0025.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0025.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0026.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0026.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0027.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0027.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0028.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0028.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0029.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0029.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0030.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0030.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0031.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0031.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0032.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0032.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0033.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0033.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0034.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0034.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0035.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0035.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0036.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0036.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0037.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0037.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0038.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0038.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0039.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0039.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0040.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0040.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0041.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0041.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0042.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0042.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0043.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0043.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0044.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0044.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0045.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0045.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0046.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0046.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0047.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0047.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0048.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0048.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0049.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0049.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0050.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0050.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0051.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0051.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0052.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0052.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0053.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0053.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0054.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0054.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0055.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0055.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0056.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0056.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0057.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0057.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0058.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0058.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0059.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0059.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0060.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0060.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0061.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0061.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0062.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0062.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0063.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0063.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0064.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0064.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0065.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0065.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0066.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0066.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0067.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0067.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0068.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0068.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0069.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0069.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0070.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0070.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0071.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0071.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0072.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0072.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg/0073.jpg" afterPath="$PROJECT_DIR$/data/images/bg/0073.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/samples.vec" afterPath="$PROJECT_DIR$/data/images/samples.vec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/bg.dat" afterPath="$PROJECT_DIR$/data/images/bg.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/data/cascade.xml" afterPath="$PROJECT_DIR$/data/images/data/cascade.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/create_classifier.bat" afterPath="$PROJECT_DIR$/create_classifier.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edit_samples.py" afterPath="$PROJECT_DIR$/src/edit_samples.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/negative.dat" afterPath="$PROJECT_DIR$/data/images/negative.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/positive.dat" afterPath="$PROJECT_DIR$/data/images/positive.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/data/params.xml" afterPath="$PROJECT_DIR$/data/images/data/params.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/data/stage0.xml" afterPath="$PROJECT_DIR$/data/images/data/stage0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/data/stage1.xml" afterPath="$PROJECT_DIR$/data/images/data/stage1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/data/stage2.xml" afterPath="$PROJECT_DIR$/data/images/data/stage2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/data/stage3.xml" afterPath="$PROJECT_DIR$/data/images/data/stage3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/data/stage4.xml" afterPath="$PROJECT_DIR$/data/images/data/stage4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/data/stage5.xml" afterPath="$PROJECT_DIR$/data/images/data/stage5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/data/stage6.xml" afterPath="$PROJECT_DIR$/data/images/data/stage6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/data/stage7.xml" afterPath="$PROJECT_DIR$/data/images/data/stage7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/data/stage8.xml" afterPath="$PROJECT_DIR$/data/images/data/stage8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/images/data/stage9.xml" afterPath="$PROJECT_DIR$/data/images/data/stage9.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CrowdBehaviorRecognition.iws" />
@@ -100,13 +53,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_samples.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="edit_samples.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edit_samples.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3647059" vertical-offset="1313" max-vertical-offset="3672">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="3672">
               <caret line="90" column="54" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
               <folding>
                 <element signature="e#55#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38169256" vertical-offset="0" max-vertical-offset="579">
+              <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
+              <folding>
+                <element signature="e#23#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,6 +113,7 @@
         <option value="$PROJECT_DIR$/src/skin.py" />
         <option value="$PROJECT_DIR$/split_images.sh" />
         <option value="$PROJECT_DIR$/src/edit_samples.py" />
+        <option value="$PROJECT_DIR$/src/test.py" />
       </list>
     </option>
   </component>
@@ -155,10 +121,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="683" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -197,6 +161,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -229,9 +194,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrowdBehaviorRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrowdBehaviorRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,11 +465,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="0" width="683" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16617863" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34032983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -533,39 +511,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/split_images.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="2159">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/behavior.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="187">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/split_image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="527">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edit_samples.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1789" max-vertical-offset="2397">
@@ -899,7 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33223686" vertical-offset="257" max-vertical-offset="87516">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,12 +880,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/images/006.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/images/004.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/images/000.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/edit_samples.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3647059" vertical-offset="1313" max-vertical-offset="3672">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="3672">
           <caret line="90" column="54" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
           <folding>
             <element signature="e#55#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38169256" vertical-offset="0" max-vertical-offset="579">
+          <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
