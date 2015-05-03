@@ -35,6 +35,7 @@ for filename in listdir(directory):
 
     im = imread(directory + '/' + filename)
     im_gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
+    im_gray = cv2.resize(im_gray, (1280, 720));
 
     ksize = 5
 
