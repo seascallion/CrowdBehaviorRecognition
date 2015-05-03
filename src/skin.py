@@ -1,6 +1,8 @@
 # import the necessary packages
 import numpy as np
+import behavior
 import cv2
+
 
 def detect_skin(oImage):
     # define the upper and lower boundaries of the HSV pixel
