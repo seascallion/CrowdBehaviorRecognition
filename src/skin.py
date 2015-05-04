@@ -11,7 +11,8 @@ def detect_skin(oImage):
     upper = np.array([20, 255, 255], dtype='uint8')
 
     # resize the image
-    image = cv2.resize(oImage, (0,0), fx=2, fy=2)
+    #image = cv2.resize(oImage, (0,0), fx=2, fy=2)
+    image = oImage.copy()
 
     # resize the frame, convert it to the HSV color space,
     # and determine the HSV pixel intensities that fall into
@@ -36,3 +37,7 @@ def detect_skin(oImage):
     #cv2.waitKey(0)
 
     return skinMask
+
+
+def just_skin(image):
+    return cv2.bitwise_and(image, image, mask=detect_skin(image))

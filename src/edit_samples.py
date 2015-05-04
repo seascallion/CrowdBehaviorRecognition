@@ -1,5 +1,4 @@
 #! /usr/bin/env python
-# import the necessary packages
 import argparse
 import cv2
 import os
@@ -88,19 +87,25 @@ def click_and_crop(event, x, y, flags, param):
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument('-i', '--images', default='data/images', help='Path to the images folder')
+ap.add_argument('-i', '--images', default='data/images/sampleImages', help='Path to the images folder')
+ap.add_argument('-o', '--output', default='data/images/hand_classifier', help='Path to the output folder for data files')
 args = vars(ap.parse_args())
 
 images_path = args['images'].replace('\\', os.sep)
-positive_path = os.sep.join([images_path, 'positive.dat'])
-negative_path = os.sep.join([images_path, 'negative.dat'])
-bg_path = os.sep.join([images_path, 'bg.dat'])
+output_path = args['output'].replace('\\', os.sep)
+positive_path = os.sep.join([output_path, 'positive.dat'])
+negative_path = os.sep.join([output_path, 'negative.dat'])
+bg_path = os.sep.join([output_path, 'bg.dat'])
 
-image_paths = [
+# Ensure output path exists
+if not os.path.exists(output_path):
+    os.makedirs(output_path)
+
+image_paths = sorted([
     os.sep.join([images_path, filename])
     for filename in os.listdir(images_path)
     if any(filename.endswith('.{0}'.format(ext)) for ext in ['jpg', 'jpeg', 'png'])
-]
+])
 
 
 # load description data
@@ -128,7 +133,7 @@ done = False
 
 while not done:
     image_path = image_paths[image_index]
-    path_rel = ntpath.basename(image_path)
+    path_rel = os.path.relpath(image_path, output_path).replace('\\', os.sep)
     if path_rel not in pos_data:
         pos_data[path_rel] = []
     if path_rel not in neg_data:
