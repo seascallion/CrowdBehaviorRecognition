@@ -2,7 +2,7 @@ import cv2
 import csv
 from cv2 import imread, Sobel, CV_64F
 from matplotlib.pyplot import title, xticks, yticks, subplot, imshow, show
-from skin import detect_skin
+from analysis import analyze
 import numpy as np
 from os import listdir
 
@@ -13,7 +13,7 @@ cheer_threshold = 0.05
 density_low_threshold = 0.1
 density_high_threshold = 0.18
 
-directory = '../data/images'
+directory = '../data/images/sampleImages'
 with open('../data/csv.csv') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
@@ -31,33 +31,16 @@ cheering_dict = {
     'cheering': [0, 0]
 }
 
-for filename in listdir(directory):
+for filename in sorted(listdir(directory)):
 
     im = imread(directory + '/' + filename)
-    im_gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
-    im_gray = cv2.resize(im_gray, (1280, 720));
+    print filename
+    cheeringness, density = analyze(im)
 
-    ksize = 5
-
-    sobel_x = np.abs(Sobel(im_gray, CV_64F, 1, 0, ksize=ksize))
-    sobel_y = np.abs(Sobel(im_gray, CV_64F, 0, 1, ksize=ksize))
-
-    sobel_x *= 255.0 / sobel_x.max()
-    sobel_y *= 255.0 / sobel_y.max()
-
-    skin = detect_skin(im)
-
-    vert_amount = sobel_x.mean()
-    horz_amount = sobel_y.mean()
-
-    cheeringness = np.log(vert_amount / horz_amount)
-
-    density = skin.mean() / skin.max()
+    cheering_s = 'cheering' if cheeringness > cheer_threshold else 'idle'
+    density_s = 'low' if density < density_low_threshold else ('medium' if density < density_high_threshold else 'high')
 
     shortFilename = filename.split('.')[0]
-    cheering_s = 'cheering' if cheeringness > cheer_threshold else 'idle' 
-    density_s  = 'low' if density < density_low_threshold else ('medium' if density < density_high_threshold else 'high')
-
     true_density = test_results[shortFilename]['density']
     if density_s == true_density:
         density_dict[true_density][0] += 1
@@ -70,7 +53,7 @@ for filename in listdir(directory):
     else:
         cheering_dict[true_cheer][1] += 1
 
-    
+
     print 'File:', filename
     print 'Cheeringness: ',cheering_s, ' ', test_results[shortFilename]['action'],cheeringness
     print 'Density:',density_s, ' ', true_density, density
