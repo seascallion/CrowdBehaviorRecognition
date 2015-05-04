@@ -20,7 +20,7 @@ classifiers = {
     cascade_name: cv2.CascadeClassifier('C:/opencv/sources/data/haarcascades/%s.xml' % cascade_name)
     for cascade_name in cascade_names
 }
-filenames = argv[1:] if len(argv) > 1 else os.listdir('../data/images')
+filenames = argv[1:] if len(argv) > 1 else os.listdir('../data/images/sampleImages')
 
 face_classifier_names = [
     'haarcascade_frontalface_default',
@@ -37,7 +37,7 @@ face_classifiers = {
 smile_classifier = cv2.CascadeClassifier('C:/opencv/sources/data/haarcascades/%s.xml' % 'haarcascade_smile')
 
 for filename in filenames:
-    image = cv2.imread('../data/images/%s' % filename)
+    image = cv2.imread('../data/images/sampleImages/%s' % filename)
     image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     width, height = image_gray.shape
     print filename, '%dx%d' % (width, height)
