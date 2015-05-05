@@ -190,7 +190,7 @@ with open(negative_path, 'w+') as output_file:
             output_file.write('%s\n' % line)
 
 # crop negative samples into their own files. OpenCV training system needs it done this way. Supes complicated, I know
-negative_samples_path = os.path.join(images_path, 'bg')
+negative_samples_path = os.path.join(output_path, 'bg')
 if not os.path.exists(negative_samples_path):
     os.makedirs(negative_samples_path)
 index = 0
@@ -208,7 +208,7 @@ with open(bg_path, 'w+') as output_file:
             cropped_filepath = os.path.join(negative_samples_path, cropped_filename)
             cv2.imwrite(cropped_filepath, cropped_image)
             index += 1
-            rel_cropped_filename = os.path.relpath(cropped_filepath, images_path).replace('\\', '/')
+            rel_cropped_filename = os.path.relpath(cropped_filepath, output_path).replace('\\', os.sep)
             output_file.write('%s\n' % rel_cropped_filename)
 
 # close all open windows
