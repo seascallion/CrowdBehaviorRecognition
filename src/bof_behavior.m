@@ -40,7 +40,7 @@ ylabel('Frequency of occurrence')
 
 categoryClassifier = trainImageCategoryClassifier(trainingSets, bag);
 
-confMatrix = evaluate(categoryClassifier, trainingSets);
+%confMatrix = evaluate(categoryClassifier, trainingSets);
 
 confMatrix = evaluate(categoryClassifier, validationSets);
 
