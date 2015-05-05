@@ -34,7 +34,7 @@ cheering_dict = {
 for filename in sorted(listdir(directory)):
 
     im = imread(directory + '/' + filename)
-    cheeringness, density = analyze(im)
+    cheeringness, density, sobel_x, sobel_y, skin = analyze(im)
 
     cheering_s = 'cheering' if cheeringness > cheer_threshold else 'idle'
     density_s = 'low' if density < density_low_threshold else ('medium' if density < density_high_threshold else 'high')
@@ -52,6 +52,9 @@ for filename in sorted(listdir(directory)):
     else:
         cheering_dict[true_cheer][1] += 1
 
+    # Delete this sectoin latetr
+    #if true_density == 'high' and density_s != true_density:
+       #display_filenames.append(filename)
 
     print 'File:', filename
     print 'Cheeringness: ',cheering_s, ' ', test_results[shortFilename]['action'],cheeringness

@@ -28,4 +28,4 @@ def analyze( im ):
     if math.isnan(density):
         density = 0.0
 
-    return (cheeringness, density)
+    return (cheeringness, density, sobel_x, sobel_y, skin)
