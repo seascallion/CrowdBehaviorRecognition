@@ -1,4 +1,5 @@
 import cv2
+import math
 from cv2 import imread, Sobel, CV_64F
 import numpy as np
 from skin import detect_skin
@@ -23,5 +24,8 @@ def analyze( im ):
     cheeringness = np.log(vert_amount / horz_amount)
 
     density = skin.mean() / skin.max()
+
+    if math.isnan(density):
+        density = 0.0
 
     return (cheeringness, density)
