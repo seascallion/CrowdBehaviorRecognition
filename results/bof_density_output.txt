@@ -1,3 +1,6 @@
+
+  Academic License
+
 >> bof_behavior
 
 ans = 
@@ -23,21 +26,17 @@ Creating Bag-Of-Features from 2 image sets.
 * Extracting SURF features using the Grid selection method.
 ** The GridStep is [8 8] and the BlockWidth is [32 64 96 128].
 
-* Extracting features from 13 images in image set 1...done. Extracted 443280 features.
-* Extracting features from 13 images in image set 2...done. Extracted 1070592 features.
+* Extracting features from 13 images in image set 1...done. Extracted 249600 features.
+* Extracting features from 13 images in image set 2...done. Extracted 249600 features.
 
 * Keeping 80 percent of the strongest features from each image set.
 
-* Balancing the number of features across all image sets to improve clustering.
-** Image set 1 has the least number of strongest features: 354624.
-** Using the strongest 354624 features from each of the other image sets.
-
 * Using K-Means clustering to create a 500 word visual vocabulary.
-* Number of features          : 709248
+* Number of features          : 399360
 * Number of clusters (K)      : 500
 
 * Initializing cluster centers...100.00%.
-* Clustering...completed 30/100 iterations (~4.22 seconds/iteration)...converged in 30 iterations.
+* Clustering...completed 37/100 iterations (~2.37 seconds/iteration)...converged in 37 iterations.
 
 * Finished creating Bag-Of-Features
 
@@ -94,38 +93,10 @@ Evaluating image category classifier for 2 categories.
 KNOWN     | sparse   dense   
 -----------------------------
 sparse    | 0.84     0.16    
-dense     | 0.03     0.97    
+dense     | 0.00     1.00    
 
-* Average Accuracy is 0.90.
+* Average Accuracy is 0.92.
 
-
-ans = 
-
-    'sparse'
-
->> img = imread(fullfile(testingFolder, '006.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'dense'
-
->> img = imread(fullfile(testingFolder, '014.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'sparse'
-
->> img = imread(fullfile(testingFolder, '028.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'sparse'
-
->> img = imread(fullfile(testingFolder, '027.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
->> categoryClassifier.Labels(labelIdx)
 
 ans = 
 

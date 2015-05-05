@@ -1,3 +1,107 @@
+
+  Academic License
+
+>> bof_behavior
+
+ans = 
+
+    'sparse'    'dense'
+
+
+ans =
+
+    44    65
+
+
+ans =
+
+    44    44
+
+
+Creating Bag-Of-Features from 2 image sets.
+--------------------------------------------
+* Image set 1: sparse.
+* Image set 2: dense.
+
+* Extracting SURF features using the Grid selection method.
+** The GridStep is [8 8] and the BlockWidth is [32 64 96 128].
+
+* Extracting features from 13 images in image set 1...done. Extracted 249600 features.
+* Extracting features from 13 images in image set 2...done. Extracted 249600 features.
+
+* Keeping 80 percent of the strongest features from each image set.
+
+* Using K-Means clustering to create a 500 word visual vocabulary.
+* Number of features          : 399360
+* Number of clusters (K)      : 500
+
+* Initializing cluster centers...100.00%.
+* Clustering...completed 37/100 iterations (~2.37 seconds/iteration)...converged in 37 iterations.
+
+* Finished creating Bag-Of-Features
+
+
+Training an image category classifier for 2 categories.
+--------------------------------------------------------
+* Category 1: sparse
+* Category 2: dense
+
+* Encoding features for category 1...done.
+* Encoding features for category 2...done.
+
+* Finished training the category classifier. Use evaluate to test the classifier on a test set.
+
+
+Evaluating image category classifier for 2 categories.
+-------------------------------------------------------
+
+* Category 1: sparse
+* Category 2: dense
+
+* Evaluating 13 images from category 1...done.
+* Evaluating 13 images from category 2...done.
+
+* Finished evaluating all the test sets.
+
+* The confusion matrix for this test set is:
+
+
+               PREDICTED
+KNOWN     | sparse   dense   
+-----------------------------
+sparse    | 0.92     0.08    
+dense     | 0.00     1.00    
+
+* Average Accuracy is 0.96.
+
+
+Evaluating image category classifier for 2 categories.
+-------------------------------------------------------
+
+* Category 1: sparse
+* Category 2: dense
+
+* Evaluating 31 images from category 1...done.
+* Evaluating 31 images from category 2...done.
+
+* Finished evaluating all the test sets.
+
+* The confusion matrix for this test set is:
+
+
+               PREDICTED
+KNOWN     | sparse   dense   
+-----------------------------
+sparse    | 0.84     0.16    
+dense     | 0.00     1.00    
+
+* Average Accuracy is 0.92.
+
+
+ans = 
+
+    'dense'
+
 >> bof_behavior
 
 ans = 
@@ -23,21 +127,17 @@ Creating Bag-Of-Features from 2 image sets.
 * Extracting SURF features using the Grid selection method.
 ** The GridStep is [8 8] and the BlockWidth is [32 64 96 128].
 
-* Extracting features from 15 images in image set 1...done. Extracted 2199336 features.
-* Extracting features from 15 images in image set 2...done. Extracted 2332168 features.
+* Extracting features from 15 images in image set 1...done. Extracted 288000 features.
+* Extracting features from 15 images in image set 2...done. Extracted 288000 features.
 
 * Keeping 80 percent of the strongest features from each image set.
 
-* Balancing the number of features across all image sets to improve clustering.
-** Image set 1 has the least number of strongest features: 1759469.
-** Using the strongest 1759469 features from each of the other image sets.
-
 * Using K-Means clustering to create a 500 word visual vocabulary.
-* Number of features          : 3518938
+* Number of features          : 460800
 * Number of clusters (K)      : 500
 
 * Initializing cluster centers...100.00%.
-* Clustering...completed 21/100 iterations (~21.28 seconds/iteration)...converged in 21 iterations.
+* Clustering...completed 33/100 iterations (~2.74 seconds/iteration)...converged in 33 iterations.
 
 * Finished creating Bag-Of-Features
 
@@ -70,8 +170,8 @@ Evaluating image category classifier for 2 categories.
                   PREDICTED
 KNOWN       | idle   cheering   
 --------------------------------
-idle        | 0.80   0.20       
-cheering    | 0.00   1.00       
+idle        | 0.87   0.13       
+cheering    | 0.07   0.93       
 
 * Average Accuracy is 0.90.
 
@@ -93,8 +193,8 @@ Evaluating image category classifier for 2 categories.
                   PREDICTED
 KNOWN       | idle   cheering   
 --------------------------------
-idle        | 0.65   0.35       
-cheering    | 0.06   0.94       
+idle        | 0.62   0.38       
+cheering    | 0.03   0.97       
 
 * Average Accuracy is 0.79.
 
@@ -102,84 +202,5 @@ cheering    | 0.06   0.94
 ans = 
 
     'idle'
-
->> img2 = imread(fullfile(testingFolder, '000.jpg'));
->> [labelIdx, scores] = predict(categoryClassifier, img2);
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'cheering'
-
->> img = imread(fullfile(testingFolder, '000.jpg')); [labelIdx, scores]=predict(categoryClassifier, img); categoryClassifier.Labels(labelIdx);
->> img = imread(fullfile(testingFolder, '000.jpg')); [labelIdx, scores]=predict(categoryClassifier, img); categoryClassifier.Labels(labelIdx);
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'cheering'
-
->> img = imread(fullfile(testingFolder, '000.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'cheering'
-
->> img = imread(fullfile(testingFolder, '002.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'cheering'
-
->> img = imread(fullfile(testingFolder, '003.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'cheering'
-
->> img = imread(fullfile(testingFolder, '004.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'idle'
-
->> img = imread(fullfile(testingFolder, '005.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'cheering'
-
->> img = imread(fullfile(testingFolder, '006.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'cheering'
-
->> img = imread(fullfile(testingFolder, '007.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'cheering'
-
->> img = imread(fullfile(testingFolder, '008.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'cheering'
-
->> 
->> categoryClassifier.Labels(labelIdx)
-
-ans = 
-
-    'cheering'
 
 >> 
