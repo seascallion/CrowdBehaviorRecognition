@@ -3,7 +3,7 @@ import math
 from cv2 import imread, Sobel, CV_64F
 import numpy as np
 from skin import detect_skin
-def analyze( im ):
+def analyze( im, debug ):
 
     im_gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
 
@@ -27,4 +27,7 @@ def analyze( im ):
     if math.isnan(density):
         density = 0.0
 
-    return (cheeringness, density)
+    if debug:
+        return (cheeringness, density, sobel_x, sobel_y, skin)
+    else:
+        return (cheeringness, density)

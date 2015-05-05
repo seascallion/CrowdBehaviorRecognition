@@ -1,7 +1,7 @@
 trainingFolder = '../data/images/categorized';
 testingFolder = '../data/images/sampleImages';
-imgSets = [ imageSet(fullfile(trainingFolder, 'idle')), ...
-            imageSet(fullfile(trainingFolder, 'cheering')) ];
+imgSets = [ imageSet(fullfile(trainingFolder, 'sparse')), ...
+            imageSet(fullfile(trainingFolder, 'dense')) ];
 
 { imgSets.Description } % display all labels on one line
 [imgSets.Count]         % show the corresponding count of images
@@ -16,15 +16,15 @@ imgSets = partition(imgSets, minSetCount, 'randomize');
 
 [trainingSets, validationSets] = partition(imgSets, 0.3, 'randomize');
 
-idle     = read(trainingSets(1),1);
-cheering = read(trainingSets(2),1);
+sparse     = read(trainingSets(1),1);
+dense = read(trainingSets(2),1);
 
 figure
 
 subplot(1,3,1);
-imshow(idle)
+imshow(sparse)
 subplot(1,3,2);
-imshow(cheering)
+imshow(dense)
 
 bag = bagOfFeatures(trainingSets);
 

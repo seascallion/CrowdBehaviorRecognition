@@ -1,0 +1,185 @@
+>> bof_behavior
+
+ans = 
+
+    'idle'    'cheering'
+
+
+ans =
+
+    60    49
+
+
+ans =
+
+    49    49
+
+
+Creating Bag-Of-Features from 2 image sets.
+--------------------------------------------
+* Image set 1: idle.
+* Image set 2: cheering.
+
+* Extracting SURF features using the Grid selection method.
+** The GridStep is [8 8] and the BlockWidth is [32 64 96 128].
+
+* Extracting features from 15 images in image set 1...done. Extracted 2199336 features.
+* Extracting features from 15 images in image set 2...done. Extracted 2332168 features.
+
+* Keeping 80 percent of the strongest features from each image set.
+
+* Balancing the number of features across all image sets to improve clustering.
+** Image set 1 has the least number of strongest features: 1759469.
+** Using the strongest 1759469 features from each of the other image sets.
+
+* Using K-Means clustering to create a 500 word visual vocabulary.
+* Number of features          : 3518938
+* Number of clusters (K)      : 500
+
+* Initializing cluster centers...100.00%.
+* Clustering...completed 21/100 iterations (~21.28 seconds/iteration)...converged in 21 iterations.
+
+* Finished creating Bag-Of-Features
+
+
+Training an image category classifier for 2 categories.
+--------------------------------------------------------
+* Category 1: idle
+* Category 2: cheering
+
+* Encoding features for category 1...done.
+* Encoding features for category 2...done.
+
+* Finished training the category classifier. Use evaluate to test the classifier on a test set.
+
+
+Evaluating image category classifier for 2 categories.
+-------------------------------------------------------
+
+* Category 1: idle
+* Category 2: cheering
+
+* Evaluating 15 images from category 1...done.
+* Evaluating 15 images from category 2...done.
+
+* Finished evaluating all the test sets.
+
+* The confusion matrix for this test set is:
+
+
+                  PREDICTED
+KNOWN       | idle   cheering   
+--------------------------------
+idle        | 0.80   0.20       
+cheering    | 0.00   1.00       
+
+* Average Accuracy is 0.90.
+
+
+Evaluating image category classifier for 2 categories.
+-------------------------------------------------------
+
+* Category 1: idle
+* Category 2: cheering
+
+* Evaluating 34 images from category 1...done.
+* Evaluating 34 images from category 2...done.
+
+* Finished evaluating all the test sets.
+
+* The confusion matrix for this test set is:
+
+
+                  PREDICTED
+KNOWN       | idle   cheering   
+--------------------------------
+idle        | 0.65   0.35       
+cheering    | 0.06   0.94       
+
+* Average Accuracy is 0.79.
+
+
+ans = 
+
+    'idle'
+
+>> img2 = imread(fullfile(testingFolder, '000.jpg'));
+>> [labelIdx, scores] = predict(categoryClassifier, img2);
+>> categoryClassifier.Labels(labelIdx)
+
+ans = 
+
+    'cheering'
+
+>> img = imread(fullfile(testingFolder, '000.jpg')); [labelIdx, scores]=predict(categoryClassifier, img); categoryClassifier.Labels(labelIdx);
+>> img = imread(fullfile(testingFolder, '000.jpg')); [labelIdx, scores]=predict(categoryClassifier, img); categoryClassifier.Labels(labelIdx);
+>> categoryClassifier.Labels(labelIdx)
+
+ans = 
+
+    'cheering'
+
+>> img = imread(fullfile(testingFolder, '000.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
+>> categoryClassifier.Labels(labelIdx)
+
+ans = 
+
+    'cheering'
+
+>> img = imread(fullfile(testingFolder, '002.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
+>> categoryClassifier.Labels(labelIdx)
+
+ans = 
+
+    'cheering'
+
+>> img = imread(fullfile(testingFolder, '003.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
+>> categoryClassifier.Labels(labelIdx)
+
+ans = 
+
+    'cheering'
+
+>> img = imread(fullfile(testingFolder, '004.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
+>> categoryClassifier.Labels(labelIdx)
+
+ans = 
+
+    'idle'
+
+>> img = imread(fullfile(testingFolder, '005.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
+>> categoryClassifier.Labels(labelIdx)
+
+ans = 
+
+    'cheering'
+
+>> img = imread(fullfile(testingFolder, '006.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
+>> categoryClassifier.Labels(labelIdx)
+
+ans = 
+
+    'cheering'
+
+>> img = imread(fullfile(testingFolder, '007.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
+>> categoryClassifier.Labels(labelIdx)
+
+ans = 
+
+    'cheering'
+
+>> img = imread(fullfile(testingFolder, '008.jpg')); [labelIdx, scores]=predict(categoryClassifier, img);
+>> categoryClassifier.Labels(labelIdx)
+
+ans = 
+
+    'cheering'
+
+>> 
+>> categoryClassifier.Labels(labelIdx)
+
+ans = 
+
+    'cheering'
+
+>> 

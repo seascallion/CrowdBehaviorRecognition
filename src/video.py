@@ -9,12 +9,16 @@ from analysis import analyze
 
 # Video must be in avi format
 cap = skvideo.io.VideoCapture('../data/videos/sample.avi')
+
+results = { 'activity': [], 'density': [] }
+
 while(cap.isOpened()):
     ret, frame = cap.read()
 
-    (cheer, dense) = analyze(frame)
+    if ret:
+        (cheer, dense) = analyze(frame, False)
 
-    print 'Cheering: ',cheer
-    print 'Density:', dense
-cap.release()
-
+        results['activity'].append(cheer)
+        results['density'].append(dense)
+    else:
+        cap.release()
