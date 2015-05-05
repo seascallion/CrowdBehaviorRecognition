@@ -76,11 +76,25 @@ for root, dirs, files in os.walk(directory):
 			plt.show()
 
 # Show the raw data for each image
+minCheer = 99999.9
+maxCheer = 0
+minDense = 9999.9
+maxDense = 0
 for filename, data in image_data.items():
 	print 'File:', filename
 	print ' Cheeringness: %0.4f' % data[0]
 	print ' Density:      %0.4f' % data[1]
 	print ''
+
+        if data[0] < minCheer:
+            minCheer = data[0]
+        if data[0] > maxCheer:
+            maxCheer = data[0]
+        if data[1] < minDense:
+            minDense = data[1]
+        if data[1] > maxDense:
+            maxDense = data[1]
+print minCheer,maxCheer,minDense,maxDense
 
 # Show the confusion matrices with accuracy proportions
 for parameter, confusion_dict in confusion_dicts.items():
