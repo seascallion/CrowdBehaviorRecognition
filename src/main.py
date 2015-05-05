@@ -34,7 +34,6 @@ cheering_dict = {
 for filename in sorted(listdir(directory)):
 
     im = imread(directory + '/' + filename)
-    print filename
     cheeringness, density = analyze(im)
 
     cheering_s = 'cheering' if cheeringness > cheer_threshold else 'idle'
