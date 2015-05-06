@@ -87,8 +87,8 @@ def click_and_crop(event, x, y, flags, param):
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument('-i', '--images', default='data/images/hand_sampleImages', help='Path to the images folder')
-ap.add_argument('-o', '--output', default='data/images/hand_classifier', help='Path to the output folder for data files')
+ap.add_argument('-i', '--images', default='../data/images/hand_sampleImages', help='Path to the images folder')
+ap.add_argument('-o', '--output', default='../data/images/hand_classifier', help='Path to the output folder for data files')
 args = vars(ap.parse_args())
 
 images_path = args['images'].replace('\\', os.sep)
