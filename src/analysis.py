@@ -22,7 +22,7 @@ def analyze( im, debug ):
 
     cheeringness = np.log(vert_amount / horz_amount)
 
-    density = skin.mean() / skin.max()
+    density = 1.0 * skin.mean() / 255.0
 
     if math.isnan(density):
         density = 0.0

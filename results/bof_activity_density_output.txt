@@ -1,0 +1,89 @@
+
+  Academic License
+
+>> bof_behavior
+
+ans = 
+
+    'idle'    'sparse'    'cheering'
+
+
+ans =
+
+    19    44    46
+
+
+ans =
+
+    19    19    19
+
+
+Creating Bag-Of-Features from 3 image sets.
+--------------------------------------------
+* Image set 1: idle.
+* Image set 2: sparse.
+* Image set 3: cheering.
+
+* Extracting SURF features using the Grid selection method.
+** The GridStep is [8 8] and the BlockWidth is [32 64 96 128].
+
+* Extracting features from 6 images in image set 1...done. Extracted 115200 features.
+* Extracting features from 6 images in image set 2...done. Extracted 115200 features.
+* Extracting features from 6 images in image set 3...done. Extracted 115200 features.
+
+* Keeping 80 percent of the strongest features from each image set.
+
+* Using K-Means clustering to create a 500 word visual vocabulary.
+* Number of features          : 276480
+* Number of clusters (K)      : 500
+
+* Initializing cluster centers...100.00%.
+* Clustering...completed 46/100 iterations (~1.84 seconds/iteration)...converged in 46 iterations.
+
+* Finished creating Bag-Of-Features
+
+
+Training an image category classifier for 3 categories.
+--------------------------------------------------------
+* Category 1: idle
+* Category 2: sparse
+* Category 3: cheering
+
+* Encoding features for category 1...done.
+* Encoding features for category 2...done.
+* Encoding features for category 3...done.
+
+* Finished training the category classifier. Use evaluate to test the classifier on a test set.
+
+
+Evaluating image category classifier for 3 categories.
+-------------------------------------------------------
+
+* Category 1: idle
+* Category 2: sparse
+* Category 3: cheering
+
+* Evaluating 13 images from category 1...done.
+* Evaluating 13 images from category 2...done.
+* Evaluating 13 images from category 3...done.
+
+* Finished evaluating all the test sets.
+
+* The confusion matrix for this test set is:
+
+
+                      PREDICTED
+KNOWN       | idle   sparse   cheering   
+-----------------------------------------
+idle        | 0.62   0.00     0.38       
+sparse      | 0.08   0.85     0.08       
+cheering    | 0.23   0.00     0.77       
+
+* Average Accuracy is 0.74.
+
+
+ans = 
+
+    'idle'
+
+>> 

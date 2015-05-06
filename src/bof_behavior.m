@@ -1,7 +1,7 @@
 trainingFolder = '../data/images/categorized';
 testingFolder = '../data/images/sampleImages';
-imgSets = [ imageSet(fullfile(trainingFolder, 'idle')), ...
-            imageSet(fullfile(trainingFolder, 'cheering')) ];
+imgSets = [ imageSet(fullfile(trainingFolder, 'activity/idle')), ...
+            imageSet(fullfile(trainingFolder, 'activity/cheering'))];
 
 { imgSets.Description } % display all labels on one line
 [imgSets.Count]         % show the corresponding count of images
@@ -17,26 +17,20 @@ imgSets = partition(imgSets, minSetCount, 'randomize');
 [trainingSets, validationSets] = partition(imgSets, 0.3, 'randomize');
 
 idle     = read(trainingSets(1),1);
-cheering = read(trainingSets(2),1);
+cheering = read(trainingSets(3),1);
+
 
 figure
 
 subplot(1,3,1);
 imshow(idle)
 subplot(1,3,2);
-imshow(cheering)
+imshow(cheering);
 
 bag = bagOfFeatures(trainingSets);
 
 img = read(imgSets(1), 1);
 featureVector = encode(bag, img);
-
-% Plot the histogram of visual word occurrences
-figure
-bar(featureVector)
-title('Visual word occurrences')
-xlabel('Visual word index')
-ylabel('Frequency of occurrence')
 
 categoryClassifier = trainImageCategoryClassifier(trainingSets, bag);
 
